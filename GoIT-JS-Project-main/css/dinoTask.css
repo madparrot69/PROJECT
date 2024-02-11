@@ -1,0 +1,187 @@
+.dinoTask{
+    
+
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+    
+    height: 297px;
+    width: 720px;
+    box-sizing: border-box;
+
+
+   
+
+}
+
+.dinoTaskName{
+
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Montserrat Alternates';
+
+    color: #000; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+   
+}
+
+.dinoScore{
+    color: #464646;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    
+    top: 35px;
+    right: 17px;
+}
+
+.dinoHighScore{
+    color: #777777;
+    font-size: 12px;
+    font-weight: 600;
+
+    position: absolute;
+
+    top: 35px;
+    right: 102px;
+
+}
+
+.GAME__OVER{
+    color: #464646;
+    font-size: 16px;
+    font-weight: 600;
+
+    height: 14px;
+
+    position: absolute;
+    left: calc(50% - 145px);
+    top: 80px;
+    letter-spacing: 16px;
+}
+
+.gameOverRestartBtn{
+
+    height: 35px;
+    width: 40px;
+
+    background-color: #464646;
+    color: #fff;
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 110px;
+    left: calc(50% - 20px);
+    
+}
+
+.gameOverRestartBtn i{
+
+    font-size: 26px;
+    font-family: "Press Start 2P", system-ui;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.dinoTaskFunctions{
+    height: 241px;
+    width: 720px;
+    box-sizing: border-box;
+
+    font-family: "Press Start 2P", system-ui;
+
+    border: #000 1px solid;
+    
+    margin-top: 36px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+
+.dinoGroundTrack{
+
+    width: 720px;
+    
+    position: absolute;
+    
+    bottom: 70px;
+    left: 0px;
+
+}
+
+.dino{
+    position: absolute;
+    
+    top: 127px;
+    left: 50px;
+
+    width: 55px;
+    height: 55px;
+
+    opacity: 0;
+
+
+}
+
+.cacti{
+    height: 60px;
+
+    position: absolute;
+    
+    bottom: 65px;
+    right: 50px;
+
+    /* animation: cactusMove 2s linear infinite; */
+
+}
+
+@keyframes cactusMove {
+    0%{
+        left: 660px;
+    }
+    100%{
+        left: -1px;
+    }
+}
+
+.jump{
+    animation: jump 2s linear;
+
+}
+
+@keyframes jump {
+    0%{
+        top: 127px;
+    }
+    50%{
+        top: 20px;
+    }
+    100%{
+        top: 127px;
+    }
+}
+
+.hr6{
+
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin: 36px auto;
+
+    
+}

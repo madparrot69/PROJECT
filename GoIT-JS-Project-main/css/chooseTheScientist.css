@@ -1,0 +1,261 @@
+.chooseTheScientist{
+    
+
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+    
+    height: auto;
+    width: 1014px;
+
+
+}
+
+.chooseTheScientistImgGroupDiv{
+    width: 259px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.scientistDiv3{
+
+    width: 100px;
+    height: 100px;
+    
+    flex-shrink: 0;
+    
+    text-align: center;
+
+    flex: 1 0 100px;
+    margin: 19.639854127985px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    
+
+    border-radius: 20px;
+    background: #D9D9D9;
+
+    
+
+}
+
+.chooseTheScientistName {
+
+    display: flex;
+    justify-content: center;
+
+    color: #000; 
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    margin-bottom: 36px;
+}
+
+.chooseTheScientistDiv{
+    margin: auto;
+
+    height: 679px;
+    width: 857px;
+
+
+}
+
+
+
+.chooseTheScientistImg{
+
+    
+    margin: auto;
+
+    min-height: 100px;
+    min-width: 259px;
+    max-height: 372px;
+    max-width: 557px;
+
+    display: flex;
+    justify-content: space-around;
+
+    flex-flow: row wrap;
+
+    
+}
+
+.chooseTheScientistImgGroupDiv div{
+    /* background-color: #ff0000; */
+    width: 100px;
+    height: 100px;
+}
+
+.scientistDiv1 {
+    width: 100px;
+    height: 100px;
+    
+    flex-shrink: 0;
+    
+    text-align: center;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    
+
+    border-radius: 20px;
+    background: #D9D9D9;
+
+}
+
+.scientistDiv2 {
+    width: 100px;
+    height: 100px;
+    
+    flex-shrink: 0;
+    
+    text-align: center;
+
+    padding-left: 19px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    
+
+    border-radius: 20px;
+    background: #D9D9D9;
+
+}
+.scientistDiv{
+
+    width: 100px;
+    height: 100px;
+    
+    flex-shrink: 0;
+    
+    text-align: center;
+
+    flex: 1 0 100px;
+    margin: 19.639854127985px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    
+
+    border-radius: 20px;
+    background: #D9D9D9;
+
+    
+
+}
+
+/* .chooseTheScientist  */
+
+.chooseTheScientistQuestions{
+
+    margin-top: 72px;
+    margin-left: 40px;
+
+    display: flex;
+    justify-content: center;
+
+    
+
+    height: 216px;
+    width: 857px;
+
+    flex-flow: column wrap;
+
+}
+
+.questions1{
+
+    height: 216px;
+
+    width: 380px;
+
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+
+    flex-flow: row wrap;
+
+}
+
+.questions2{
+
+    height: 216px;
+    width: 441px;
+
+    display: flex;
+    justify-content: flex-start;
+
+    flex-flow: row wrap;
+}
+
+.q8{
+    text-align: left;
+
+}
+
+.q9{
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.questions1 button, .questions2 button, .q9{
+
+    margin-bottom: 20px;
+
+    min-height: 35px;
+    width: auto;
+    min-width: 227px;
+    padding: 10px 20px;
+
+    cursor: pointer;
+
+    background-color: #000;
+    color: #fff;
+
+    border: none;
+    border-radius: 20px;
+
+    font-family: 'Montserrat Alternates';
+
+    font-size: 12px;
+    font-weight: 400;
+
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.20);
+
+}
+
+.q1:active, .q2:active, .q3:active, .q4:active, .q5:active, .q6:active, .q7:active, .q8:active, .q9:active{
+
+    transform: translateY(2px);
+    background-color: #1f1f1f;
+
+    box-shadow: 1.5px 1.5px 0px 0px rgba(0,0,0,0.40);
+}

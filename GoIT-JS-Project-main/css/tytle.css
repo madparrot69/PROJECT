@@ -1,0 +1,29 @@
+
+.titleName{
+    
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+
+
+    margin-top: 36px;
+
+    display: flex;
+    justify-content: center;
+
+    color: #000; 
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.hr0{
+
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin: 36px auto;
+
+    
+}

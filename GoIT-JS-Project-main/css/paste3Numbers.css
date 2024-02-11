@@ -1,0 +1,107 @@
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    .paste3Numbers{
+    
+
+        outline: 0;
+        font-family: 'Montserrat Alternates';
+        
+        height: 142px;
+        width: 481px;
+    
+       
+    
+    }
+    
+    .paste3NumbersFunctions{
+        
+        height: 86px;
+        width: 481px;
+        
+        margin-top: 36px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .paste3NumbersName{
+    
+        display: flex;
+        justify-content: center;
+    
+        color: #000; 
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0em;
+        text-align: left;
+    
+    
+        
+    }
+    .paste3NumbersInputDiv{
+        
+        height: 35px;
+        width: 481px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .paste3NumbersInput1, .paste3NumbersInput2, .paste3NumbersInput3{
+        
+        height: 35px;
+        width: 135px;
+    
+        display: flex;
+        text-align: center;
+        justify-content: baseline;
+    
+        color: #7E7E7E;
+        background-color: #D7D7D7;
+        
+        border: none;
+        border-radius: 20px;
+    
+        box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.30);
+    }
+    
+    .paste3NumbersFunctions .paste3NumbersResult{
+
+        font-size: 12px;
+        font-weight: 400;
+    
+    }
+    
+    .hr8{
+    
+        width: 536px;
+        height: 1px;
+        background-color: #000;
+        margin: 36px auto;
+    
+        
+    }
+    
+    
+    .paste3NumbersInput1:focus, .paste3NumbersInput2:focus, .paste3NumbersInput3:focus{
+        transform: translateY(2px);
+    
+        color: #717171;
+        background-color: #c2c2c2;
+    
+        box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.50);
+    
+        
+    }

@@ -1,0 +1,68 @@
+.football{
+    
+
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+    
+    height: 270px;
+    width: 720px;
+
+   
+
+}
+
+.footballName{
+    font-family: 'Montserrat Alternates';
+
+
+    display: flex;
+    justify-content: center;
+
+    color: #000; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    
+}
+
+.footballPitch{
+    
+    position: relative;
+    height: 220px;
+    width: 720px;
+    
+    margin-top: 36px;
+
+    border: 1px #000 solid;
+    background-color: #5ABB58;
+    border-radius: 37px;
+
+    cursor: url('/img/mouse.svg'), auto;
+
+}
+
+.ball{
+    
+    height: 50px;
+    width: 50px;
+
+    position: absolute;
+    bottom: 90px;
+    left: 82px;
+
+    transition: transform 5s ease;
+}
+
+.hr7{
+
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin: 36px auto;
+
+    
+}

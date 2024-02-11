@@ -1,0 +1,132 @@
+input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+/* ==== */
+
+.guessNumber{
+    
+
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+    
+    height: 91px;
+    width: 576px;
+   
+
+}
+
+
+.guessNumberName {
+
+    display: flex;
+    justify-content: center;
+
+    color: #000; 
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.guessNumberFuntcion{
+
+    margin-top: 36px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 35px;
+    width: 576px;
+    
+}
+
+.guessNumberSearchDiv{
+
+    height: 35px;
+    width: 215px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.30);
+    border-radius: 20px;
+
+
+
+}
+
+.guessNumberSearchInput{
+
+    height: 35px;
+    width: 180px;
+
+    font-size: 12px;
+    font-weight: 400;
+
+    display: flex;
+    text-align: center;
+    justify-content: baseline;
+
+    color: #7E7E7E;
+    background-color: #D7D7D7;
+
+    border-radius: 20px 0 0 20px;
+
+    border: none;
+
+
+}
+
+.guessNumberSearchBtn{
+
+    height: 35px;
+    width: 35px;
+
+    cursor: pointer;
+
+    background-color: #000;
+    color: #fff;
+
+    border: none;
+    border-radius: 0 20px 20px 0;
+}
+
+.guessNumberSearchBtn i{
+    padding: 10px;
+}
+
+
+.guessNumberFuntcion .guessNumberResult{
+
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.hr2{
+
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin: 36px auto;
+
+}
+
+
+.checkTheYearYouBornAtSearchInput:focus{
+
+    color: #717171;
+    background-color: #c2c2c2;
+
+}   

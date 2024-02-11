@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('/fonts/icomoon.eot?9jvs9k');
+  src:  url('/fonts/icomoon.eot?9jvs9k#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.ttf?9jvs9k') format('truetype'),
+    url('/fonts/icomoon.woff?9jvs9k') format('woff'),
+    url('/fonts/icomoon.svg?9jvs9k#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before, [class*=" _icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-dino_arrow:before {
+  content: "\e908";
+}
+._icon-ground:before {
+  content: "\e900";
+}
+._icon-cactus_1:before {
+  content: "\e901";
+}
+._icon-cactus_2:before {
+  content: "\e902";
+}
+._icon-cactus_3:before {
+  content: "\e903";
+}
+._icon-dino_run1:before {
+  content: "\e904";
+}
+._icon-dino_run2:before {
+  content: "\e905";
+}
+._icon-standing_still_eye_closed:before {
+  content: "\e906";
+}
+._icon-standing_still:before {
+  content: "\e907";
+}

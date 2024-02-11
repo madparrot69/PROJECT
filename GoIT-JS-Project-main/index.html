@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a6f525de4d.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script type="module" src="./js/calculator.Js" defer></script>
+    <script type="module" src="./js/timeCalculator.js" defer></script>
+    <script type="module" src="./js/modalWindow.js" defer></script>
+    <script type="module" src="./js/checkTheYearYouBornAt.js" defer></script>
+    <script type="module" src="./js/guessNumber.js" defer></script>
+    <script type="module" src="./js/footballPitch.js" defer></script>
+    <script type="module" src="./js/stoneScissorsPapier.js" defer></script>
+    <script type="module" src="./js/portfolio.js" defer></script>
+    <script src="./js/paste3Number.js" defer></script>
+    <script src="./js/dino.js" defer></script>
+
+    <script src="./js/chooseTheScientist.js" defer></script>
+  </head>
+  <body>
+    <!-- modal-window -->
+    <div class="modalBox1">
+      <div class="modalWindow">
+        <button class="closeModalWindow">
+          <img
+            src="./img/icon/iconClose.svg"
+            alt=""
+            class="closeModalWindowImg"
+          />
+        </button>
+        <div class="modalWindowFunction">
+          <li style="list-style-type: none" class="modalWindowHelloTextLi">
+            <p class="modalWindowHelloText1">Привіт!</p>
+            <p class="modalWindowHelloText2">
+              Ви потрапили на сайт інтерактивних ігор та завдань Надіємось, що
+              вам сподобається і ви отримаєте позитивні емоції! Бажаємо Вам
+              гарно провести час!
+            </p>
+          </li>
+          <div class="modalWindowEnterYerNameDiv">
+            <p class="modalWindowEnterYerName">Введіть своє ім’я:</p>
+            <input
+              type="text"
+              class="modalWindowInput"
+              placeholder="Ваше ім’я..."
+            />
+            <button class="modalWindowSaveName">Зберегти</button>
+          </div>
+        </div>
+        <img src="./img/icon/iconSword.svg" alt="" class="modalWindowSvg1" />
+        <img src="./img/icon/iconPuzzle.svg" alt="" class="modalWindowSvg2" />
+        <img src="./img/icon/iconBar.svg" alt="" class="modalWindowSvg3" />
+        <img src="./img/icon/iconGameBar.svg" alt="" class="modalWindowSvg4" />
+      </div>
+    </div>
+
+    <!-- modal-thank-you-window -->
+    <div class="modalBox2">
+      <div class="modalThankYouWindow">
+        <button class="closeModalThankYouWindow">
+          <img
+            src="./img/icon/iconClose.svg"
+            alt=""
+            class="modalThankYouWindowImg"
+          />
+        </button>
+        <div class="modalThankYouWindowDiv">
+          <h5 class="thankYou">Дякую за підписку!</h5>
+
+          <img
+            src="./img/icon/iconSword.svg"
+            alt=""
+            class="modalWindowSvg1_1"
+          />
+          <img
+            src="./img/icon/iconPuzzle.svg"
+            alt=""
+            class="modalWindowSvg2_1"
+          />
+          <img src="./img/icon/iconBar.svg" alt="" class="modalWindowSvg3_1" />
+          <img
+            src="./img/icon/iconGameBar.svg"
+            alt=""
+            class="modalWindowSvg4_1"
+          />
+        </div>
+      </div>
+    </div>
+
+    <header class="white" id="themeMode">
+      <div class="logo"></div>
+      <nav>
+        <ul>
+          <li>Інтерактив</li>
+          <li>Наша команда</li>
+          <li>Контакти</li>
+        </ul>
+      </nav>
+
+      <div class="theme">
+        <label class="switch">
+          <input type="checkbox" id="btnSwitch" />
+          <span class="slider round"></span>
+        </label>
+        <p>Вітаємо, <span class="userSpan">User</span></p>
+      </div>
+    </header>
+
+    <section>
+      <main class="container white" id="themeMode">
+        <!-- tytle -->
+        <h1 class="titleName">Популярні інетрактивні ігри</h1>
+        <div class="hr0"></div>
+
+        <!-- 1 -->
+
+        <div class="checkTheYearYouBornAt">
+          <h3 class="checkTheYearYouBornAtName">
+            Перевір в який рік ти народився
+          </h3>
+          <div class="checkTheYearYouBornAtFuntcion">
+            <div class="checkTheYearYouBornAtSearchDiv">
+              <input
+                class="checkTheYearYouBornAtSearchInput"
+                type="number"
+                placeholder="Введіть рік народження"
+              />
+              <button class="checkTheYearYouBornAtSearchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <p class="checkTheYearYouBornAtResult">В який рік ви народилися?</p>
+          </div>
+        </div>
+        <div class="hr1"></div>
+
+        <!-- 2 -->
+
+        <div class="guessNumber">
+          <h3 class="guessNumberName">Вгадай число, яке загадав комп’ютер</h3>
+          <div class="guessNumberFuntcion">
+            <div class="guessNumberSearchDiv">
+              <input
+                class="guessNumberSearchInput"
+                title=""
+                type="number"
+                placeholder="Введіть число"
+              />
+              <button class="guessNumberSearchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <p class="guessNumberResult">Яке число загадав комп'ютер?</p>
+          </div>
+        </div>
+        <div class="hr2"></div>
+
+        <!-- 3 -->
+
+        <div class="stoneScissorsPapier">
+          <h3 class="stoneScissorsPapierName">Камінь - ножиці - папір</h3>
+          <div class="stoneScissorsPapierFunctions">
+            <div class="stoneScissorsPapierGameDiv">
+              <div class="stoneScissorsPapierBtnDiv">
+                <button class="stoneBtn">
+                  <img src="./img/icon/rock.png" alt="" />
+                </button>
+                <button class="scrissorsBtn">
+                  <img src="./img/icon/paper.png" alt="" />
+                </button>
+                <button class="papierBtn">
+                  <img src="./img/icon/scissors.png" alt="" />
+                </button>
+              </div>
+              <p class="stoneScissorsPapierResult">Результати раунду.</p>
+              <button class="stoneScissorsPapierShowResult">
+                Варіант комп’ютера
+              </button>
+            </div>
+
+            <li class="stoneScissorsPapierScoreLi">
+              <p class="stoneScissorsPapierScore">Рахунок:</p>
+              <p class="stoneScissorsPapierPlayerScore">Ви - 0</p>
+              <p class="stoneScissorsPapierComputerScore">Комп’ютер - 0</p>
+            </li>
+          </div>
+        </div>
+        <div class="hr3"></div>
+
+        <!-- 4 -->
+        <div class="calculator">
+          <h3 class="calculatorName">Калькулятор</h3>
+          <div class="calculatorFunctions">
+            <input
+              type="number"
+              placeholder="Введіть число"
+              class="calculatorNumber1"
+            />
+            <div class="calculatorOperators">
+              <button class="calculatorAddition">+</button>
+              <button class="calculatorDifference">-</button>
+              <button class="calculatorProduct">*</button>
+              <button class="calculatorDenominator">/</button>
+            </div>
+            <input
+              type="number"
+              placeholder="Введіть число"
+              class="calculatorNumber2"
+            />
+            <p class="calculatorEqual">=</p>
+            <p class="calculatorResult">Результат</p>
+          </div>
+        </div>
+        <div class="hr4"></div>
+
+        <!-- 5 -->
+
+        <div class="timeCalculator">
+          <h3 class="timeCalculatorName">Калькулятор часу</h3>
+          <div class="timeCalculatorFunctions">
+            <div class="timeCalculatorSearchDiv">
+              <input
+                type="number"
+                class="timeCalculatorNumber"
+                placeholder="Введіть число"
+              />
+              <button class="timeCalculatorButtonSearch">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <div class="timeCalculatorLine"></div>
+            <p class="timeCalculatorResult">0 дн. 0:0:0</p>
+          </div>
+        </div>
+        <div class="hr5"></div>
+
+        <!-- 6 -->
+
+        <div class="dinoTask">
+          <h3 class="dinoTaskName">Google динозавр</h3>
+          <div class="dinoTaskFunctions">
+            <h3 class="dinoHighScore">HI 000000</h3>
+            <h3 class="dinoScore">000000</h3>
+            <div class="gameOverDiv">
+              <h3 class="GAME__OVER">GAME OVER</h3>
+              <button class="gameOverRestartBtn">
+                <i class="link _icon-dino_arrow"></i>
+              </button>
+            </div>
+
+            <div class="dinoGround">
+              <div class="dinoRunImg">
+                <img
+                  src="./img/dino/dino_run1.png"
+                  alt=""
+                  id="dinoRunImg1"
+                  class="dino"
+                />
+                <img
+                  src="./img/dino/dino_run2.png"
+                  alt=""
+                  id="dinoRunImg2"
+                  class="dino"
+                />
+                <img
+                  src="./img/dino/standing_still.png"
+                  alt=""
+                  class="dino"
+                  id="dinoStayStill"
+                /><img
+                  src="./img/dino/standing_still_eye_closed.png"
+                  alt=""
+                  class="dino"
+                  id="dinoStayStillEyeClosed"
+                />
+              </div>
+              <img
+                src="./img/dino/cactus_1.png"
+                alt=""
+                id="dinoGroundCactus1"
+                class="cacti"
+              />
+              <img
+                src="./img/dino/cactus_2.png"
+                alt=""
+                class="cacti"
+                id="dinoGroundCactus2"
+              />
+              <img
+                src="./img/dino/cactus_3.png"
+                alt=""
+                class="cacti"
+                id="dinoGroundCactus3"
+              />
+
+              <img src="./img/dino/ground.png" alt="" class="dinoGroundTrack" />
+            </div>
+          </div>
+        </div>
+        <div class="hr6"></div>
+
+        <!-- 7 -->
+
+        <div class="football">
+          <h3 class="footballName">Футбол</h3>
+          <div class="footballPitch">
+            <img src="./img/ball.svg" alt="" class="ball" />
+          </div>
+        </div>
+        <div class="hr7"></div>
+
+        <!-- 8 -->
+
+        <div class="paste3Numbers">
+          <h3 class="paste3NumbersName">Введіть 3 числа</h3>
+          <div class="paste3NumbersFunctions">
+            <div class="paste3NumbersInputDiv">
+              <input
+                oninput="findLargestNumber()"
+                required
+                type="number"
+                class="paste3NumbersInput1"
+                placeholder="Введіть число"
+              />
+              <input
+                oninput="findLargestNumber()"
+                required
+                type="number"
+                class="paste3NumbersInput2"
+                placeholder="Введіть число"
+              />
+              <input
+                oninput="findLargestNumber()"
+                required
+                type="number"
+                class="paste3NumbersInput3"
+                placeholder="Введіть число"
+              />
+            </div>
+            <p class="paste3NumbersResult">
+              Найбільше число, яке ви ввели - (<span
+                class="paste3NumbersResultSpan"
+                >число</span
+              >)
+            </p>
+          </div>
+        </div>
+        <div class="hr8"></div>
+
+        <!-- 9 -->
+
+        <div class="portfolio">
+          <h3 class="portfolioName">Наша команда</h3>
+          <div class="portfolioFunctions">
+            <div class="portfolioDiv">
+              <button class="portfoliobtn1">
+                <img src="./img/arrowLeft.svg" alt="" />
+              </button>
+              <div class="portfolioCardDiv">
+                <img src="./img/icon/spotify.png" class="spotify" />
+                <img src="./img/icon/khrystyna.png" class="khrystyna" alt="" />
+              </div>
+              <button class="portfoliobtn2">
+                <img src="./img/arrowRight.svg" alt="" />
+              </button>
+            </div>
+            <h4 class="portfolioTeammates">Христина Степенко</h4>
+            <p class="portfolioWorkReport">
+              Написала html, css i js для верстки цього сайту.
+            </p>
+            <li id="sticks">
+              <div id="stick1"></div>
+              <div id="stick2"></div>
+            </li>
+          </div>
+        </div>
+        <div class="hr9"></div>
+
+        <!-- 10 -->
+
+        <div class="chooseTheScientist">
+          <h3 class="chooseTheScientistName">Обери вченого/их</h3>
+          <div class="chooseTheScientistDiv">
+            <div class="chooseTheScientistImg">
+              <div class="chooseTheScientistImgGroupDiv">
+                <div class="youngest"></div>
+                <div class="oldest"></div>
+              </div>
+            </div>
+            <div class="chooseTheScientistQuestions">
+              <div class="questions1">
+                <button class="q1">Які вчені народилися в 19 ст.</button>
+                <button class="q2">Відсортувати вчених за алфавітом</button>
+                <button class="q3">
+                  Відсортувати вчених за кількістю прожитих років
+                </button>
+                <button class="q4">
+                  Знайти вченого, який народився найпізніше
+                </button>
+              </div>
+              <div class="questions2">
+                <button class="q5">
+                  Знайти рік народження Albert Einshtein
+                </button>
+                <button class="q6">
+                  Знайти вчених, прізвища яких починаються на на літеру “С”
+                </button>
+                <button class="q7">
+                  Видалити всіх вчених, ім’я яких починається на “А”
+                </button>
+                <button class="q8">
+                  Знайти вченого, який прожив найдовше і вченого, який прожив
+                  найменше
+                </button>
+              </div>
+            </div>
+            <button class="q9">
+              Знайти вчених, в яких співпадають перші літери імені і прізвища
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <footer>
+      <div class="footer-logo"></div>
+      <p class="footer-info">
+        Тел: +38 (123) 456 78 90 <br />
+        E-Mail: codingmagic@gmail.com <br />
+        Facebook: CodingMagic <br />
+        Twitter: CodingMagic <br />
+        Instagram: CodingMagic <br />
+      </p>
+
+      <div class="form-subscribe">
+        <form class="form">
+          <input type="text" placeholder="Ваша ел. адреса..." />
+
+          <button type="submit">Підписатись</button>
+        </form>
+        <p class="form-info">
+          *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
+        </p>
+      </div>
+    </footer>
+
+    <div class="modal-start">
+      <div class="modal-window">
+        <p class="modal-title">
+          Привіт! <br />
+          Ви потрапили на сайт інтерактивних ігор та завдань <br />
+          Надіємось, що вам сподобається і ви отримаєте позитивні емоції!
+          <br />
+          Бажаємо Вам гарно провести час!
+        </p>
+
+        <p class="modal-name">Введіть своє ім’я:</p>
+
+        <form class="">
+          <input type="text" name="nameUser" placeholder="Ваше ім’я..." />
+
+          <button type="submit">Зберегти</button>
+        </form>
+      </div>
+
+      <i class="icon-close"></i>
+      <i class="icon-bar"></i>
+      <i class="icon-gameBar"></i>
+      <i class="icon-puzzle"></i>
+      <i class="icon-sword"></i>
+    </div>
+
+    <div class="modal-subscribe">
+      <p class="title">Дякую за підписку!</p>
+      <i class="icon-close"></i>
+      <i class="icon-bar"></i>
+      <i class="icon-gameBar"></i>
+      <i class="icon-puzzle"></i>
+      <i class="icon-sword"></i>
+    </div>
+  </body>
+</html>

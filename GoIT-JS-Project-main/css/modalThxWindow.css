@@ -1,0 +1,161 @@
+.modalBox2{
+
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 99998;
+
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.modalThankYouWindow{
+
+    margin: auto;
+
+    height: 245px;
+    width: 463px;
+
+
+
+    /* border: #000 1px solid; */
+    border-radius: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-flow: column wrap;
+    
+    align-content: space-around;
+    justify-content: center;
+
+    background-color: #fff;
+    
+    position: relative;
+
+
+    
+    transition: opacity 300ms ease-in-out,
+                top 1000ms ease-in-out,
+                transform 1000ms ease-in-out;
+
+    
+}
+
+
+
+.modalThankYouWindow .closeModalThankYouWindow{
+
+    height: 15px;
+    width: 15px;
+
+    background-color: #fff;
+    border: none;
+
+    position: absolute;
+
+    right: 30px;
+    top: 30px;
+    
+    transition: all 300ms ease-in-out;
+
+    cursor: pointer;
+
+}
+
+
+.modalThankYouWindowDiv{
+
+    height: 106px;
+    width: 378px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    position: relative;
+}
+
+.closeModalThankYouWindow{
+
+    height: 15px;
+    width: 15px;
+
+    background-color: #fff;
+    border: none;
+
+    position: absolute;
+
+    right: 30px;
+    top: 30px;
+
+    transition: all 300ms ease-in-out;
+
+    cursor: pointer;
+
+    
+
+}
+
+.thankYou{
+
+    font-family: 'Inter';    
+
+    font-size: 20px;
+    font-weight: 550;
+
+    text-align: center;
+    color: #000; 
+}
+
+
+
+.modalWindowSvg1_1{
+
+    height: 30px;
+    width: 30px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.modalWindowSvg2_1{
+
+    height: 30px;
+    width: 30px;
+    
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+}
+
+.modalWindowSvg3_1{
+
+    height: 30px;
+    width: 30px;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.modalWindowSvg4_1{
+
+    height: 30px;
+    width: 30px;
+    
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+}

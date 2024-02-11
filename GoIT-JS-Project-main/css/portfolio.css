@@ -1,0 +1,153 @@
+.portfolio{
+    
+
+    outline: 0;
+    font-family: 'Montserrat Alternates';
+    
+    height: 305px;
+    width: 906px;
+
+   
+
+}
+
+.portfolioFunctions{
+    
+    height: 249px;
+    width: 906px;
+    
+    margin-top: 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolioName{
+
+    display: flex;
+    justify-content: center;
+
+    color: #000; 
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    
+}
+
+.portfolioDiv{
+
+    height: 150px;
+    width: 906px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.portfolioDiv button{
+
+    height: 100px;
+    width: 50px;
+
+    border: none;
+    background-color: #fff;
+
+    cursor: pointer;
+}
+
+.portfolioCardDiv{
+    position: relative;
+}
+
+.portfolioCardDiv, .portfolioCardDiv img{
+
+    height: 150px;
+    width: 150px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #d7d7d7;
+}
+
+.portfolioCardDiv img{
+
+    height: 150px;
+    width: 150px;
+    position: absolute;
+
+}
+#stick1{
+    margin-right: 6px;
+    height: 3px;
+    width: 30px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #797979;
+}
+
+#stick2{
+
+    height: 3px;
+    width: 18px;
+
+    border: none;
+    border-radius: 3px;
+
+    background-color: #d7d7d7;
+
+}
+
+.portfolioTeammates{
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+
+}
+
+.portfolioFunctions .portfolioWorkReport{
+
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.portfolioFunctions li{
+
+    height: 3px;
+    max-width: 54px;
+
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.sticks{
+    width: 42px;
+}
+
+.Bsticks{
+    width: 64px;
+}
+
+
+
+.hr9{
+    
+    width: 536px;
+    height: 1px;
+    background-color: #000;
+    margin: 36px auto;
+}
