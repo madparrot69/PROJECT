@@ -103,13 +103,29 @@
     border: #000 1px solid;
     
     margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    position: absolute;
+}
+
+.dinoFirstTakeDiv{
+    height: 241px;
+    width: 720px;
+    box-sizing: border-box;
+
+    border: #ff0000 1px solid;
+    z-index: 9;
+    margin-top: 36px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    position: relative;
+    position: absolute;
 }
 
 
@@ -138,7 +154,7 @@
 
 }
 
-.cacti{
+.cactus{
     height: 60px;
 
     position: absolute;
@@ -146,10 +162,14 @@
     bottom: 65px;
     right: 50px;
 
-    /* animation: cactusMove 2s linear infinite; */
 
 }
+.cactusMove{
+    opacity: 1;
+    visibility: visible;
 
+    animation: cactusMove 2s linear infinite;
+}
 @keyframes cactusMove {
     0%{
         left: 660px;
@@ -160,7 +180,7 @@
 }
 
 .jump{
-    animation: jump 2s linear;
+    animation: jump 1s linear;
 
 }
 
