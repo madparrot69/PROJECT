@@ -217,7 +217,7 @@ q7.addEventListener(`click`, function () {
   });
 });
 
-q8.addEventListener(`click`, function () {});
+// q8.addEventListener(`click`, function () {});
 
 q9.addEventListener(`click`, function () {
   const scientistsContainer = document.querySelector(

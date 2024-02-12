@@ -1,13 +1,17 @@
 header {
    width: 1440px;
    height: 80px;
-   background: #ffffff;
+   background: #131212;
    display: flex;
    align-items: center;
    padding-left: 175px;
-   /* border: 1px solid black; */
+   z-index: 9999;
+   position: fixed;
+   border-bottom: 1px solid black;
 }
-
+section{
+   width: auto;
+}
 header .logo {
    background-image: url(../img/logo.svg);
    width: 93px;
@@ -23,12 +27,77 @@ nav ul {
 
 .theme {
    margin-left: 360px;
-   width: 185px;
+   min-width: 185px;
    height: 20px;
    display: flex;
+
+   flex-flow: row wrap;
    justify-content: space-between;
    align-items: center;
+   
 }
+nav li{
+   font-family: "Montserrat Alternates";
+   font-size: 12px;
+   font-weight: 400;
+
+
+}
+.sortGames{
+   min-height: 105px;
+   min-width: 160px;
+   transition: 0.4s;
+   display: flex;
+   flex-flow: column wrap;
+   position: absolute;
+   top: 75px;
+   left: 314px;
+   border-top: none;
+   border-bottom: #000 1px solid;
+   border-right: #000 1px solid;
+   border-left: #000 1px solid;
+   border-radius: 0px 0px 20px 20px;
+}
+.userSpan{
+   cursor: pointer;
+}
+.sortGamesOpen{
+   animation: sortGamesOpen 0.4s linear;
+}
+@keyframes sortGamesOpen {
+   0%{
+      top: 0;
+      opacity: 0;
+   }100%{
+      top: 75px;
+   }
+}
+
+#navBtn3{
+   border-radius:  0px 0px 20px 20px;
+   /* background-color: red; */
+}
+.sortGames button:hover{
+   background-color: #f1f1f1;
+}
+
+.sortGames button:active {
+   background-color: #b9b9b9;
+}
+.sortGames button{
+   font-family: "Montserrat Alternates";
+   font-size: 12px;
+
+   height: 35px;
+   width: 160px;
+
+   cursor: pointer;
+
+   border: none;
+   background-color: #fff;
+}
+
+
 
 .theme p {
    font-family: "Montserrat Alternates";
@@ -36,8 +105,15 @@ nav ul {
    font-weight: 400;
    font-size: 16px;
    line-height: 20px;
+   width: 200px;
    /* padding-top: 36px; */
 }
+.interactive, .ourTeamLi, .Contacts{
+   cursor: pointer;
+   width: auto;
+   height: 80px;
+   display: flex;
+   align-items: center;}
 
 .switch {
    position: relative;

@@ -49,12 +49,11 @@
     
     height: 50px;
     width: 50px;
-
+    transition: 0.4s;
     position: absolute;
     bottom: 90px;
     left: 82px;
 
-    transition: transform 5s ease;
 }
 
 .hr7{

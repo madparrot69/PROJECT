@@ -23,8 +23,10 @@ const runningTrack = document.querySelector(`.dinoGroundTrack`);
 startGame.classList.remove(`opacity`);
 GAMEOVER.classList.add(`opacity`);
 
-cactus.classList.add(`opacity`);
-// cactus.classList.remove(`cactusMove`);
+// // cactus.style.opacity = `0`;
+cactus1.classList.remove(`cactusMove`);
+cactus2.classList.remove(`cactusMove`);
+cactus3.classList.remove(`cactusMove`);
 
 HI.style.opacity = `0`;
 score.style.opacity = `0`;
@@ -32,9 +34,9 @@ scoreGame = 0;
 
 dino.style.opacity = `0`;
 
-// cactus1.style.opacity = `0`;
-// cactus2.style.opacity = `0`;
-// cactus3.style.opacity = `0`;
+cactus1.style.opacity = `0`;
+cactus2.style.opacity = `0`;
+cactus3.style.opacity = `0`;
 
 //cactus random
 
@@ -42,32 +44,50 @@ runningTrack.style.opacity = `0`;
 
 startGame.addEventListener(`click`, function () {
   startGame.classList.add(`opacity`);
-  setTimeout(function () {
-    const num = Math.floor(Math.random() * 3) + 1;
-    console.log(num);
-
-    if (num === `1`) {
-      cactus1.style.opacity = `1`;
-      cactus2.style.opacity = `0`;
-      cactus3.style.opacity = `0`;
-    } else if (num === `2`) {
-      cactus1.style.opacity = `0`;
-      cactus2.style.opacity = `1`;
-      cactus3.style.opacity = `0`;
-    } else if (num === `3`) {
-      cactus1.style.opacity = `0`;
-      cactus2.style.opacity = `0`;
-      cactus3.style.opacity = `1`;
-    }
-    // cactus.classList.add(`cactusMove`);
-  }, 3000);
 
   score.style.opacity = `1`;
+  cactus1.style.opacity = `1`;
+  cactus1.classList.add(`cactusMove`);
+
+  // function cactusRandom() {
+  //   let num = Math.floor(Math.random() * 3) + 1;
+  //   console.log(num);
+  //   if (num === 1) {
+  //     cactus1.classList.add(`cactusMove`);
+  //     cactus1.style.opacity = `1`;
+
+  //     cactus2.classList.remove(`cactusMove`);
+  //     cactus2.style.opacity = `0`;
+
+  //     cactus3.classList.remove(`cactusMove`);
+  //     cactus3.style.opacity = `0`;
+  //   } else if (num === 2) {
+  //     cactus1.classList.remove(`cactusMove`);
+  //     cactus1.style.opacity = `0`;
+
+  //     cactus2.classList.add(`cactusMove`);
+  //     cactus2.style.opacity = `1`;
+
+  //     cactus3.classList.remove(`cactusMove`);
+  //     cactus3.style.opacity = `0`;
+  //   } else if (num === 3) {
+  //     cactus1.classList.remove(`cactusMove`);
+  //     cactus1.style.opacity = `0`;
+
+  //     cactus2.classList.remove(`cactusMove`);
+  //     cactus2.style.opacity = `0`;
+
+  //     cactus3.classList.add(`cactusMove`);
+  //     cactus3.style.opacity = `1`;
+  //   }
+  // }
+  // setInterval(cactusRandom, 2000);
+  jump();
+
   setInterval(function () {
     scoreGame += 1;
-    score.textContent = scoreGame;
+    score.textContent = scoreGame.toString().padStart(5, "0");
   }, 100);
-
   dinoRun1.style.opacity = `1`;
   runningTrack.style.opacity = `1`;
   dino.style.opacity = `1`;
@@ -75,7 +95,7 @@ startGame.addEventListener(`click`, function () {
   dinoStay.style.opacity = `0`;
   dinoStayEyeClosed.style.opacity = `0`;
 
-  // changeDinoRunImage();
+  changeDinoRunImage();
 });
 function changeDinoImage() {
   if (dinoStay.style.opacity === "1") {
@@ -103,21 +123,54 @@ dinoGame.addEventListener(`click`, function () {
   // dinoStayEyeClosed.style.opacity = `0`;
 });
 
-// function changeDinoRunImage() {
-//   if (dinoRun1.style.opacity === "1") {
-//     dinoRun1.style.opacity = "0";
-//     dinoRun2.style.opacity = "1";
-//   } else {
-//     dinoRun1.style.opacity = "1";
-//     dinoRun2.style.opacity = "0";
-//   }
-// }
+function changeDinoRunImage() {
+  if (dinoRun1.style.opacity === "1") {
+    dinoRun1.style.opacity = "0";
+    dinoRun2.style.opacity = "1";
+  } else {
+    dinoRun1.style.opacity = "1";
+    dinoRun2.style.opacity = "0";
+  }
+}
 
-// intervalId2 = setInterval(changeDinoRunImage, 300);
+intervalId2 = setInterval(changeDinoRunImage, 300);
 
-dinoGame.addEventListener(`click`, function (event) {
+dinoGame.addEventListener(`click`, function () {
   jump();
   console.log(`hi`);
+
+  // const num = Math.floor(Math.random() * 3) + 1;
+  // console.log(num);
+  // setTimeout(function () {
+  //   if (num === 1) {
+  //     cactus1.classList.add(`cactusMove`);
+  //     cactus1.style.opacity = `1`;
+
+  //     cactus2.classList.remove(`cactusMove`);
+  //     cactus2.style.opacity = `0`;
+
+  //     cactus3.classList.remove(`cactusMove`);
+  //     cactus3.style.opacity = `0`;
+  //   } else if (num === 2) {
+  //     cactus1.classList.remove(`cactusMove`);
+  //     cactus1.style.opacity = `0`;
+
+  //     cactus2.classList.add(`cactusMove`);
+  //     cactus2.style.opacity = `1`;
+
+  //     cactus3.classList.remove(`cactusMove`);
+  //     cactus3.style.opacity = `0`;
+  //   } else if (num === 3) {
+  //     cactus1.classList.remove(`cactusMove`);
+  //     cactus1.style.opacity = `0`;
+
+  //     cactus2.classList.remove(`cactusMove`);
+  //     cactus2.style.opacity = `0`;
+
+  //     cactus3.classList.add(`cactusMove`);
+  //     cactus3.style.opacity = `1`;
+  //   }
+  // }, 2000);
 });
 
 function jump() {
@@ -128,3 +181,30 @@ function jump() {
     dino.classList.remove("jump");
   }, 1000);
 }
+
+let isAlive = setInterval(function () {
+  let dinoTop = parseInt(
+    window.getComputedStyle(dinoRun1).getPropertyValue(`top`)
+  );
+  let cactus1Left = parseInt(
+    window.getComputedStyle(cactus1).getPropertyValue(`left`)
+  );
+  // let cactus2Left = parseInt(
+  //   window.getComputedStyle(cactus2).getPropertyValue(`left`)
+  // );
+  // let cactus3Left = parseInt(
+  //   window.getComputedStyle(cactus3).getPropertyValue(`left`)
+  // );
+
+  if (
+    cactus1Left > 0 &&
+    cactus1Left < 50 &&
+    // cactus2Left > 0 &&
+    // cactus2Left < 50 &&
+    // cactus3Left > 0 &&
+    // cactus3Left < 50 &&
+    dinoTop >= 140
+  ) {
+    console.log(`game over`);
+  }
+}, 10);

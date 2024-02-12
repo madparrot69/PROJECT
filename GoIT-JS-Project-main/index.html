@@ -23,6 +23,8 @@
     <script type="module" src="./js/portfolio.js" defer></script>
     <script src="./js/paste3Number.js" defer></script>
     <script src="./js/dino.js" defer></script>
+    <script src="./js/site_navigation.js" defer></script>
+    <script src="./js/darkMode.js" defer></script>
 
     <script src="./js/chooseTheScientist.js" defer></script>
   </head>
@@ -51,6 +53,7 @@
             <input
               type="text"
               class="modalWindowInput"
+              maxlength="10"
               placeholder="Ваше ім’я..."
             />
             <button class="modalWindowSaveName">Зберегти</button>
@@ -100,9 +103,9 @@
       <div class="logo"></div>
       <nav>
         <ul>
-          <li>Інтерактив</li>
-          <li>Наша команда</li>
-          <li>Контакти</li>
+          <li class="interactive">Інтерактив</li>
+          <li class="ourTeamLi">Наша команда</li>
+          <li class="Contacts">Контакти</li>
         </ul>
       </nav>
 
@@ -120,7 +123,11 @@
         <!-- tytle -->
         <h1 class="titleName">Популярні інетрактивні ігри</h1>
         <div class="hr0"></div>
-
+        <div class="sortGames">
+          <button id="navBtn1">Числовий</button>
+          <button id="navBtn2">Ігровий</button>
+          <button id="navBtn3">Ознайомчий</button>
+        </div>
         <!-- 1 -->
 
         <div class="checkTheYearYouBornAt">
@@ -304,26 +311,6 @@
                   id="cactusImg3"
                 />
               </div>
-              <!-- <div class="cactusImg">
-                <img
-                  src="./img/dino/cactus_1.png"
-                  alt=""
-                  id="dinoGroundCactus1"
-                  class="cactus"
-                />
-                <img
-                  src="./img/dino/cactus_2.png"
-                  alt=""
-                  class="cactus"
-                  id="dinoGroundCactus2"
-                />
-                <img
-                  src="./img/dino/cactus_3.png"
-                  alt=""
-                  class="cactus"
-                  id="dinoGroundCactus3"
-                />
-              </div> -->
 
               <img src="./img/dino/ground.png" alt="" class="dinoGroundTrack" />
             </div>
@@ -381,7 +368,7 @@
 
         <!-- 9 -->
 
-        <div class="portfolio">
+        <div id="portfolio" class="portfolio">
           <h3 class="portfolioName">Наша команда</h3>
           <div class="portfolioFunctions">
             <div class="portfolioDiv">
@@ -465,11 +452,15 @@
       </p>
 
       <div class="form-subscribe">
-        <form class="form">
-          <input type="text" placeholder="Ваша ел. адреса..." />
+        <div class="form">
+          <input
+            type="email"
+            class="enterYerEmail"
+            placeholder="Ваша ел. адреса..."
+          />
 
-          <button type="submit">Підписатись</button>
-        </form>
+          <button class="subscribeBtn">Підписатись</button>
+        </div>
         <p class="form-info">
           *Підписавшись, Ви зможете ортимувати інформаццію про новинки на сайті
         </p>
