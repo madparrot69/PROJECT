@@ -80,12 +80,13 @@
     position: absolute;
     top: 110px;
     left: calc(50% - 20px);
+    padding: 2px;
     
 }
 
 .gameOverRestartBtn i{
 
-    font-size: 26px;
+    font-size: 22px;
     font-family: "Press Start 2P", system-ui;
     
     display: flex;
@@ -100,7 +101,7 @@
 
     font-family: "Press Start 2P", system-ui;
 
-    /* border: #000 1px solid; */
+    border: #000 1px solid;
     
     margin-top: 36px;
     display: flex;
@@ -116,7 +117,7 @@
     width: 720px;
     box-sizing: border-box;
 
-    /* border: #ff0000 1px solid; */
+    border: #ff0000 1px solid;
     z-index: 9;
     margin-top: 36px;
 
@@ -149,7 +150,7 @@
     width: 55px;
     height: 55px;
 
-    opacity: 0;
+    opacity: 1;
 
 
 }

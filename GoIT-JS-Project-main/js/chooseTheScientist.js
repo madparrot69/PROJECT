@@ -111,7 +111,12 @@ q1.addEventListener(`click`, function () {
   names.forEach((names) => {
     const scientistDiv = document.createElement(`div`);
     scientistDiv.textContent = names;
-    scientistDiv.className = `scientistDiv`;
+    if (scientistDiv.classList != "scientistDiv") {
+      scientistDiv.classList.add("scientistDiv");
+    }
+    setTimeout(function () {
+      scientistDiv.classList.remove("scientistDiv");
+    }, 1000);
     scientistsContainer.appendChild(scientistDiv);
   });
 });
@@ -217,9 +222,9 @@ q7.addEventListener(`click`, function () {
   });
 });
 
-// q8.addEventListener(`click`, function () {});
+q8.addEventListener(`click`, function () {});
 
-q9.addEventListener(`click`, function () {
+q9.addEventListener("click", function () {
   const scientistsContainer = document.querySelector(
     ".chooseTheScientistImgGroupDiv"
   );
@@ -232,9 +237,9 @@ q9.addEventListener(`click`, function () {
 
     if (firstNameLetter === firstSrNameLetter) {
       const scientistDiv = document.createElement("div");
+      scientistDiv.className = "scientistDiv3"; // Set the class first
       scientistDiv.textContent = `${scientist.name}  ${scientist.surname}`;
       scientistsContainer.appendChild(scientistDiv);
-      scientistDiv.className = `scientistDiv3`;
     }
   });
 });

@@ -38,8 +38,6 @@ cactus1.style.opacity = `0`;
 cactus2.style.opacity = `0`;
 cactus3.style.opacity = `0`;
 
-//cactus random
-
 runningTrack.style.opacity = `0`;
 
 startGame.addEventListener(`click`, function () {
@@ -82,7 +80,6 @@ startGame.addEventListener(`click`, function () {
   //   }
   // }
   // setInterval(cactusRandom, 2000);
-  jump();
 
   setInterval(function () {
     scoreGame += 1;
@@ -110,17 +107,14 @@ function changeDinoImage() {
 intervalId = setInterval(changeDinoImage, 300);
 
 dinoGame.addEventListener(`click`, function () {
-  // score.style.opacity = `1`;
-  // setInterval(function () {
-  //   scoreGame += 1;
-  //   score.textContent = scoreGame;
-  // }, 100);
-  // dinoRun1.style.opacity = `1`;
-  // runningTrack.style.opacity = `1`;
-  // dino.style.opacity = `1`;
-  // clearInterval(intervalId);
-  // dinoStay.style.opacity = `0`;
-  // dinoStayEyeClosed.style.opacity = `0`;
+  score.style.opacity = `1`;
+
+  dinoRun1.style.opacity = `1`;
+  runningTrack.style.opacity = `1`;
+  dino.style.opacity = `1`;
+  clearInterval(intervalId);
+  dinoStay.style.opacity = `0`;
+  dinoStayEyeClosed.style.opacity = `0`;
 });
 
 function changeDinoRunImage() {
@@ -135,7 +129,7 @@ function changeDinoRunImage() {
 
 intervalId2 = setInterval(changeDinoRunImage, 300);
 
-dinoGame.addEventListener(`click`, function () {
+dinoGame.addEventListener(`click`, function (event) {
   jump();
   console.log(`hi`);
 
@@ -181,6 +175,8 @@ function jump() {
     dino.classList.remove("jump");
   }, 1000);
 }
+
+
 
 let isAlive = setInterval(function () {
   let dinoTop = parseInt(

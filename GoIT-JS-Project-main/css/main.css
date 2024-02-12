@@ -1,5 +1,5 @@
 section {
-   max-width: 1440px;
+   min-width: 1440px;
    height: 3202px;
    display: flex;
    flex-direction: column;
@@ -11,8 +11,9 @@ section {
 }
 
 .container {
+   /* margin-top: 36px; */
    width: 1090px;
-   height: 3202px;
+   height: 8000vh;
    border: 2px solid black;
    background: #ffffff;
    display: flex;

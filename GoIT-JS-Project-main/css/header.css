@@ -1,5 +1,5 @@
 header {
-   width: 1440px;
+   min-width: 2000px;
    height: 80px;
    background: #131212;
    display: flex;
@@ -9,9 +9,7 @@ header {
    position: fixed;
    border-bottom: 1px solid black;
 }
-section{
-   width: auto;
-}
+
 header .logo {
    background-image: url(../img/logo.svg);
    width: 93px;
@@ -27,7 +25,7 @@ nav ul {
 
 .theme {
    margin-left: 360px;
-   min-width: 185px;
+   width: 280px;
    height: 20px;
    display: flex;
 
